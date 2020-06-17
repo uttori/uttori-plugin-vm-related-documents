@@ -1,17 +1,17 @@
-[![view on npm](http://img.shields.io/npm/v/uttori-plugin-vm-related-documents.svg)](https://www.npmjs.org/package/uttori-plugin-vm-related-documents)
-[![npm module downloads](http://img.shields.io/npm/dt/uttori-plugin-vm-related-documents.svg)](https://www.npmjs.org/package/uttori-plugin-vm-related-documents)
+[![view on npm](http://img.shields.io/npm/v/@uttori/plugin-vm-related-documents.svg)](https://www.npmjs.com/package/@uttori/plugin-vm-related-documents)
+[![npm module downloads](http://img.shields.io/npm/dt/@uttori/plugin-vm-related-documents.svg)](https://www.npmjs.com/package/@uttori/plugin-vm-related-documents)
 [![Build Status](https://travis-ci.org/uttori/uttori-plugin-vm-related-documents.svg?branch=master)](https://travis-ci.org/uttori/uttori-plugin-vm-related-documents)
 [![Dependency Status](https://david-dm.org/uttori/uttori-plugin-vm-related-documents.svg)](https://david-dm.org/uttori/uttori-plugin-vm-related-documents)
 [![Coverage Status](https://coveralls.io/repos/uttori/uttori-plugin-vm-related-documents/badge.svg?branch=master)](https://coveralls.io/r/uttori/uttori-plugin-vm-related-documents?branch=master)
 
-# Uttori View Model Enrichment - Related Documents
+# Uttori View Model Enrichment Plugin - Related Documents
 
-A plugin to expose and add related documents with shared tags for a given document to a view-model or other object.
+A plugin to expose & add related documents with shared tags for a given document to a view-model or other object.
 
 ## Install
 
 ```bash
-npm install --save uttori-plugin-vm-related-documents
+npm install --save @uttori/plugin-vm-related-documents
 ```
 
 ## Config
