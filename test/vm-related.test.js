@@ -1,3 +1,4 @@
+// @ts-nocheck
 const test = require('ava');
 const { ViewModelRelatedDocuments } = require('../src');
 
