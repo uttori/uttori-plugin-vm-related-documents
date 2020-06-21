@@ -83,10 +83,10 @@ class ViewModelRelatedDocuments {
    * Register the plugin with a provided set of events on a provided Hook system.
    *
    * @param {object} context - A Uttori-like context.
-   * @param {object} context.hooks - An event system / hook system to use.
-   * @param {Function} context.hooks.on - An event registration function.
    * @param {object} context.config - A provided configuration to use.
    * @param {object} context.config.events - An object whose keys correspong to methods, and contents are events to listen for.
+   * @param {object} context.hooks - An event system / hook system to use.
+   * @param {Function} context.hooks.on - An event registration function.
    * @example <caption>ViewModelRelatedDocuments.register(context)</caption>
    * const context = {
    *   hooks: {
@@ -166,7 +166,7 @@ class ViewModelRelatedDocuments {
     const not_in = `"${ignore_slugs.join('", "')}"`;
     const query = `SELECT 'slug', 'title', 'tags', 'updateDate' FROM documents WHERE slug NOT_IN (${not_in}) AND tags INCLUDES ${tags} ORDER BY title ASC LIMIT ${limit}`;
     try {
-      results = await context.hooks.fetch('storage-query', query);
+      [results] = await context.hooks.fetch('storage-query', query);
     } catch (error) {
       /* istanbul ignore next */
       debug('Error:', error);

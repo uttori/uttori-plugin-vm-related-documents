@@ -12,18 +12,20 @@ const config = {
 const hooks = {
   on: () => {},
   fetch: () => [
-    {
-      updateDate: null,
-      createDate: new Date('2019-04-20').toISOString(),
-      slug: 'good-title',
-      tags: ['cool', 'blue'],
-    },
-    {
-      updateDate: new Date('2019-04-21').toISOString(),
-      createDate: new Date('2019-04-21').toISOString(),
-      slug: 'fake-title',
-      tags: ['cool', 'red'],
-    },
+    [
+      {
+        updateDate: null,
+        createDate: new Date('2019-04-20').toISOString(),
+        slug: 'good-title',
+        tags: ['cool', 'blue'],
+      },
+      {
+        updateDate: new Date('2019-04-21').toISOString(),
+        createDate: new Date('2019-04-21').toISOString(),
+        slug: 'fake-title',
+        tags: ['cool', 'red'],
+      },
+    ],
   ],
 };
 

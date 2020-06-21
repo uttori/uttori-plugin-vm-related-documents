@@ -57,17 +57,17 @@ declare class ViewModelRelatedDocuments {
      * };
      * ViewModelRelatedDocuments.register(context);
      * @param context - A Uttori-like context.
-     * @param context.hooks - An event system / hook system to use.
-     * @param context.hooks.on - An event registration function.
      * @param context.config - A provided configuration to use.
      * @param context.config.events - An object whose keys correspong to methods, and contents are events to listen for.
+     * @param context.hooks - An event system / hook system to use.
+     * @param context.hooks.on - An event registration function.
      */
     static register(context: {
-        hooks: {
-            on: (...params: any[]) => any;
-        };
         config: {
             events: any;
+        };
+        hooks: {
+            on: (...params: any[]) => any;
         };
     }): void;
     /**

@@ -14,6 +14,10 @@ A plugin to expose & add related documents with shared tags for a given document
 npm install --save @uttori/plugin-vm-related-documents
 ```
 
+## Dependencies
+
+There must be a plugin registered with the hooks to listen for a `storage-query` event and respond with an array containing documents matching the query.
+
 ## Config
 
 ```js
