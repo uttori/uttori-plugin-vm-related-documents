@@ -48,6 +48,24 @@ test('ViewModelRelatedDocuments.register(context): errors without events', (t) =
   }, { message: 'Missing events to listen to for in \'config.events\'.' });
 });
 
+test('ViewModelRelatedDocuments.register(context): does not error with events corresponding to missing methods', (t) => {
+  t.notThrows(() => {
+    ViewModelRelatedDocuments.register({
+      hooks: {
+        on: () => {},
+      },
+      config: {
+        [ViewModelRelatedDocuments.configKey]: {
+          events: {
+            test: ['test'],
+            validateConfig: ['validate-config'],
+          },
+        },
+      },
+    });
+  });
+});
+
 test('ViewModelRelatedDocuments.defaultConfig(): can return a default config', (t) => {
   t.notThrows(ViewModelRelatedDocuments.defaultConfig);
 });
