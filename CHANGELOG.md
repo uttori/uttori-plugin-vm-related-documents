@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [2.1.4](https://github.com/uttori/uttori-plugin-vm-related-documents/compare/v2.1.3...v2.1.4) - 2020-11-15
+## [2.1.4](https://github.com/uttori/uttori-plugin-vm-related-documents/compare/v2.1.3...v2.1.4) - 2020-12-31
 
 - 🧰 Make `debug` an optional dependency
 
