@@ -44,7 +44,7 @@ test('ViewModelRelatedDocuments.register(context): errors without event dispatch
 
 test('ViewModelRelatedDocuments.register(context): errors without events', (t) => {
   t.throws(() => {
-    ViewModelRelatedDocuments.register({ hooks: { on: () => {} }, config: { [ViewModelRelatedDocuments.configKey]: { } } });
+    ViewModelRelatedDocuments.register({ hooks: { on: () => {} }, config: { [ViewModelRelatedDocuments.configKey]: {} } });
   }, { message: 'Missing events to listen to for in \'config.events\'.' });
 });
 

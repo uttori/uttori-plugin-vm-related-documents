@@ -1,4 +1,4 @@
-const debug = require('debug')('Uttori.Plugin.ViewModel.RelatedDocuments');
+let debug = () => {}; try { debug = require('debug')('Uttori.Plugin.ViewModel.RelatedDocuments'); } catch {}
 
 /**
  * Uttori View Model Enrichment - Related Documents
