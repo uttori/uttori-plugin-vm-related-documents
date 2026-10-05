@@ -4,6 +4,10 @@
 [![Dependency Status](https://david-dm.org/uttori/uttori-plugin-vm-related-documents.svg)](https://david-dm.org/uttori/uttori-plugin-vm-related-documents)
 [![Coverage Status](https://coveralls.io/repos/uttori/uttori-plugin-vm-related-documents/badge.svg?branch=master)](https://coveralls.io/r/uttori/uttori-plugin-vm-related-documents?branch=master)
 
+# Package Moved
+
+This has been added to the core https://github.com/uttori/uttori-wiki package.
+
 # Uttori View Model Enrichment Plugin - Related Documents
 
 A plugin to expose & add related documents with shared tags for a given document to a view-model or other object.
